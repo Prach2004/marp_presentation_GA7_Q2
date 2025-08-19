@@ -1,0 +1,36 @@
+/* @theme product-docs */
+@import 'default';
+
+/* Palette + typography */
+:root {
+  --brand: #0f766e;   /* teal */
+  --ink:   #0b1220;   /* dark text */
+  --muted: #64748b;   /* subtle text */
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+section {
+  font-size: 28px;
+  color: var(--ink);
+}
+
+h1, h2, h3 { color: var(--brand); }
+
+section.lead {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+section.lead h1 { font-size: 64px; }
+
+code, pre {
+  font-family: var(--mono);
+  font-size: .9em;
+}
+
+footer { color: var(--muted); }
+
+/* Utility classes usable from Markdown via Marp directives/classes */
+.brand { color: var(--brand); font-weight: 700; }
+.small { font-size: 0.8em; color: var(--muted); }
